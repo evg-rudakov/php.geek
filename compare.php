@@ -3,6 +3,9 @@ $var1 = 30;
 $var2 = 30;
 var_dump($var1);
 var_dump($var2);
+var_dump($var2);
+var_dump($var2);
+var_dump($var2);
 
 
 //if ($var1 >= $var2) {
