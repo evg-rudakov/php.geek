@@ -2,8 +2,12 @@
 $variable = 'Назначение переменной <br/>';
 echo '$variable=' . $variable;
 echo '$variable=' . $variable;
+$a = (int)0;
+$b = null;
 
-
+$resutl = $a == $b;
+var_dump((int)0 === (int)'hello, world');
+// @evg_rudakov - мой телеграм
 // правильные переменные
 $variable = true;
 $two_words_three = true;

@@ -80,6 +80,8 @@ echo $int1 / $int2 . '<br/>';
 echo $int1 % $int2 . '<br/>';
 echo $int1 ** $int2 . '<br/>';
 
+
+
 //echo ++$int2 . '<br/>';
 //
 //echo --$int1 . '<br/>';
