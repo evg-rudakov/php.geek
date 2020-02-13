@@ -18,10 +18,8 @@ $nu123mber123__ = 123;
 define('FIRST_CONST', 100);
 echo FIRST_CONST;
 
-
 /// неправильные переменные
 // $v@riable = false
-// $two-word
 // $переменная
 
 
