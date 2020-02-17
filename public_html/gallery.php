@@ -5,7 +5,7 @@
 
 require '../engine/core.php';
 
-function routeAll(){
+function routeAll() {
     echo render('gallery/all');
 }
 /**
