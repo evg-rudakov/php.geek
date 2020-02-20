@@ -12,12 +12,14 @@ return [
         'assets' => [
             'css' => [
                 '/css/bootstrap.min.css',
+                '/css/jquery.fancybox.min.css',
                 '/css/style.css',
             ],
             'js' => [
                 '/js/vendor/jquery-3.3.1.min.js',
                 '/js/vendor/popper.min.js',
                 '/js/vendor/bootstrap.min.js',
+                '/js/vendor/jquery.fancybox.min.js',
                 '/js/app.js',
             ],
         ],
