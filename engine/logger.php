@@ -28,7 +28,7 @@ function systemLog($message, string $type = 'info') {
 
     // если директория логов не создана
     if (!is_dir(dirname($logPath))) {
-        mkdir(dirname($logPath), 644, true);
+        mkdir(dirname($logPath), 0777, true);
     }
 
     // добавляем строку в файл

@@ -1,12 +1,24 @@
 <?php
 require '../engine/core.php';
 
+
 function routeIndex() {
-    echo render('site/home');
+    systemLog('подключили логирование', 'error');
+    $echo = render('site/home');
+    echo $echo;
+}
+
+function routeHome() {
+    $echo = render('site/home');
+    echo $echo;
 }
 
 function routeError() {
-    echo render('site/error');
+
+    $echo = render('site/error');
+
+    echo $echo;
 }
 
 route();
+

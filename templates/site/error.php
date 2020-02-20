@@ -1,2 +1,2 @@
-error
 <?php
+echo 'error';

@@ -1,2 +1,3 @@
+<h1>Home</h1>
 <?php
-echo 'hello-home';
+echo 'home';

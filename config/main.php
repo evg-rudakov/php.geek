@@ -1,7 +1,2 @@
 <?php
-
-// подгрузка всех настроек приложения
-$config = array_merge(
-    include 'app.php',
-    include 'db.php'
-);
+$config = array_merge(require 'app.php', require 'db.php');
