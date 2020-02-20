@@ -6,6 +6,8 @@ return [
         'host' => 'php.geek',
         'logPath' => ROOT . "/data/logs",
         'templatesPath' => ROOT . '/templates',
+        'imagesUrl' => '/images',
+        'imagesPath' => 'images',
 
         'assets' => [
             'css' => [
