@@ -3,7 +3,6 @@
 /**
  * Файл с функциями для работы с базой данных
  */
-
 $connection = mysqli_connect(
     $config['db']['host'],
     $config['db']['user'],

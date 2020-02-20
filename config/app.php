@@ -8,7 +8,7 @@ return [
         'templatesPath' => ROOT . '/templates',
 
         'imagesUrl' => '/images',
-        'imagesPath' => ROOT . '/images',
+        'imagesPath' => 'images',
 
         'assets' => [
             'css' => [
