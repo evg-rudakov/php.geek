@@ -6,6 +6,8 @@ return [
         'host' => 'php.geek',
         'logPath' => ROOT . "/data/logs",
         'templatesPath' => ROOT . '/templates',
+        'imagesUrl' => '/images',
+        'imagesPath' => 'images',
 
         'assets' => [
             'css' => [
@@ -17,11 +19,6 @@ return [
                 '/js/vendor/popper.min.js',
                 '/js/vendor/bootstrap.min.js',
                 '/js/app.js',
-            ],
-            'img' => [
-                '/img/1.jpg',
-                '/img/2.jpg',
-                '/img/3.jpg',
             ],
         ],
     ]
