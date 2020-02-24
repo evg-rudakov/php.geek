@@ -2,6 +2,8 @@
 
 $items = [
     ['label' => 'Главная', 'url' => '/'],
+    ['label' => 'Галерея', 'url' => '/gallery.php'],
+    ['label' => 'Товары', 'url' => '/goods.php'],
 ];
 
 ?>

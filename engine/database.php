@@ -17,7 +17,14 @@ $connection = mysqli_connect(
  */
 function getItem(string $sql) {
     global $connection;
+//    $sql = mysqli_real_escape_string($connection, $sql);
     $result = mysqli_query($connection, $sql);
+
+
+    if ($result === false ) {
+        var_dump(mysqli_error($connection));
+        die();
+    }
 
     $row = mysqli_fetch_assoc($result);
     return $row;
@@ -34,6 +41,11 @@ function getItemArray(string $sql) {
 
     $rows = [];
 
+    if ($result === false ) {
+        var_dump(mysqli_error($connection));
+        die();
+    }
+
     while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
@@ -49,6 +61,10 @@ function getItemArray(string $sql) {
 function execute(string $sql) {
     global $connection;
     $result = mysqli_query($connection, $sql);
+    if ($result === false ) {
+        var_dump(mysqli_error($connection));
+        die();
+    }
 
     return $result;
 }

@@ -15,7 +15,7 @@
 <?php } ?>
 </head>
 <body>
-<?//= render('widgets/navbar', [], false) ?>
+<?= render('widgets/navbar', [], false) ?>
 
 <div class="container">
     <div class="py-3">
