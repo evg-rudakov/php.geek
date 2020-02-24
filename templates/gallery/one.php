@@ -8,5 +8,6 @@ $image = $data['image'];
     <a class="btn btn-primary" href="/gallery.php">Назад в галерею</a>
 </div>
 <div class="row">
-    <img src="<?= $image['path'] . '/' . $image['name'] ?>" alt="<?= $image['name'] ?>" style="margin-top: 20px">
+    <p>Рейтинг: <?= $image['rating'] ?></p>
+    <img src="<?= $image['path'] . '/' . $image['name'] ?>" alt="<?= $image['name'] ?>" style="margin-top: 20px; width: 600px;">
 </div>
