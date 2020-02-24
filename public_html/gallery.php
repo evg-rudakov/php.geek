@@ -9,23 +9,22 @@ function routeIndex()
 {
 
     //нужно добавить в выборку ниже order by rating
-    $imagesSql = getItemArray('select name from image');
-    foreach ($imagesSql as $item) {
-        $images[] = $item['name'];
-    }
+    $images = getItemArray('select name, rating from image order by rating desc');
 
     echo render('gallery/all', ['images' => $images]);
 }
 
 /**
- * domain.com/?action=one&file=1.jpg
+ * domain.com/?action=one&image=1.jpg
  */
 function routeOne()
 {
     $image = getItem('select * from image where name="'.$_GET['image'].'"');
 
     if (!empty($image)) {
-        //увеличить $image['rating'] на +1 execute
+        $rating = $image['rating'] ?? 0;
+        execute('update image set rating=' . ($rating + 1) . ' where id=' . $image['id']);
+        $image = getItem('select * from image where name="'.$_GET['image'].'"');
 
         echo render('gallery/one', ['image' => $image]);
     } else {
@@ -36,6 +35,11 @@ function routeOne()
 function routeFill() {
     fillDataBase();
     render('site/success');
+}
+
+function routeDownload()
+{
+    echo render('gallery/download');
 }
 
 route();
