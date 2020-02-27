@@ -3,7 +3,11 @@
 $items = [
     ['label' => 'Главная', 'url' => '/'],
     ['label' => 'Галерея', 'url' => '/gallery.php'],
-    ['label' => 'Товары', 'url' => '/goods.php'],
+    ['label' => 'Каталог', 'url' => '/shop/category.php'],
+    ['label' => 'Вход', 'url' => '/user.php', 'role' => '?'],
+    ['label' => 'Личный кабинет', 'url' => '/user.php', 'role' => '@'],
+    ['label' => 'Админка', 'url' => '/admin', 'role' => 'admin'],
+    ['label' => 'Выход', 'url' => '/user.php?action=logout', 'role' => '@'],
 ];
 
 ?>
@@ -16,9 +20,17 @@ $items = [
     <div class="navbar-right" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <?php foreach ($items as $link) { ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= $link['url'] ?>"><?= $link['label'] ?></a>
-                </li>
+                <?php if (isset($link['role'])) { ?>
+                    <?php if (userHasRole($link['role'])) { ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= $link['url'] ?>"><?= $link['label'] ?></a>
+                        </li>
+                    <?php } ?>
+                <?php } else {  ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $link['url'] ?>"><?= $link['label'] ?></a>
+                    </li>
+                <?php } ?>
             <?php } ?>
         </ul>
     </div>

@@ -12,8 +12,11 @@ ini_set('display_startup_errors', 1);
 session_start();
 
 require ROOT . '/config/main.php';         // конфигурация
+
 require ROOT . '/engine/render.php';       // генерация шаблонов
-require ROOT . '/engine/router.php';       // маршрутизация
+require ROOT . '/engine/auth.php';       // галлерея
 require ROOT . '/engine/logger.php';       // логирование
 require ROOT . '/engine/database.php';       // базаданных
 require ROOT . '/engine/gallery.php';       // галлерея
+require ROOT . '/engine/router.php';       // маршрутизация
+
