@@ -53,11 +53,5 @@ function loadImage(string $tmpFileName, string $userFileName)
     return false;
 }
 
-function createComment()
-{
-    $a=1;
-
-}
-
 
 

@@ -16,4 +16,5 @@ require ROOT . '/engine/render.php';       // генерация шаблоно�
 require ROOT . '/engine/router.php';       // маршрутизация
 require ROOT . '/engine/logger.php';       // логирование
 require ROOT . '/engine/database.php';       // базаданных
+require ROOT . '/engine/auth.php';       // базаданных
 require ROOT . '/engine/gallery.php';       // галлерея
