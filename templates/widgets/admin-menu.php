@@ -3,6 +3,8 @@
 $items = [
     ['label' => 'Каталог', 'url' => '/admin/catalog.php'],
     ['label' => 'Скидки и акции', 'url' => '/admin/sales.php'],
+    ['label' => 'Заказы', 'url' => '/admin/orders.php'],
+    ['label' => 'Пользователи', 'url' => '/admin/users.php'],
 ];
 
 ?>

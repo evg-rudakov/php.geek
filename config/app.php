@@ -22,6 +22,7 @@ return [
                 '/js/vendor/bootstrap.min.js',
                 '/js/vendor/jquery.fancybox.min.js',
                 '/js/app.js',
+                '/js/product.js',
             ],
         ],
     ]
